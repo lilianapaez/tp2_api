@@ -1,0 +1,8 @@
+<div class="row" style="padding: 32px;">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let product of products" class="slide">
+            <app-product-thumbnail [product]="product" class="product-thumbnail">
+            </app-product-thumbnail>
+        </div>
+    </ngx-slick-carousel>
+</div>
